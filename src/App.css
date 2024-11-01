@@ -23,11 +23,11 @@ body,
 #root {
   margin: 0;
   height: 100%;
-  overflow-x: hidden;
+  overflow:visible;
 }
 
 main {
-  width: 100%;
+  width: 300%;
   height: 100%;
   padding: 16px;
   display: flex;
@@ -76,4 +76,5 @@ button {
   border-radius: 8px;
   background-color: #1a1a1a;
   border: 1px solid transparent;
+  color: white;
 }

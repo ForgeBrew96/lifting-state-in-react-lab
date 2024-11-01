@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css';
+import IngredientList from './components/IngredientList.jsx'
+import BurgerStack from './components/BurgerStack.jsx'
 
 export const availableIngredients = [
   { name: 'Kaiser Bun', color: 'saddlebrown' },
@@ -19,11 +21,22 @@ export const availableIngredients = [
 ];
 
 const App = () => {
+const [stack, setStack] = useState([])
+
+// const addToBurger = () => {
+
+// }
+
+// const removeFromBurger = () => {
+
+// }
+
   return (
     <main>
       <h1>Burger Stacker</h1>
       <section>
-      {/* List & Stack components */}
+    <IngredientList />
+    <BurgerStack />
       </section>
     </main>
   );
